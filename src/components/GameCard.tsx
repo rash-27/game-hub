@@ -3,6 +3,7 @@ import { Games } from '../hooks/useGames'
 import PlatformiconList from './PlatformiconList'
 import CriticScore from './CriticScore'
 import getCroppedImageUrl from '../services/image-url'
+import Emoji from './Emoji'
 
 interface Props{
     game : Games
