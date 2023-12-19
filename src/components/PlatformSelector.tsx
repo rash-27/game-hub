@@ -23,8 +23,7 @@ const PlatformSelector = ({onSelectPlatform ,selectedPlatform }:Props) => {
 
     if(error) return null;
   return (
-    <ChakraProvider>
-      <Box ml="10">
+
         <Menu>
           <MenuButton as={Button} rightIcon={<BsChevronDown />}>
             {selectedPlatform?.name || 'Platforms'}
@@ -33,8 +32,8 @@ const PlatformSelector = ({onSelectPlatform ,selectedPlatform }:Props) => {
             {data.map((platform)=><MenuItem onClick={()=>onSelectPlatform(platform)} key={platform.id}> {platform.name} </MenuItem>)}
           </MenuList>
         </Menu>
-      </Box>
-    </ChakraProvider>
+  
+
   );
 };
 
