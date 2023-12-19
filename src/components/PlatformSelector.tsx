@@ -1,7 +1,5 @@
 import {
-  Box,
   Button,
-  ChakraProvider,
   Menu,
   MenuButton,
   MenuItem,
